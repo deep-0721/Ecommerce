@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KICKS // Premium Footwear</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="#" class="logo">KICKS.</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#" class="active">Shop</a></li>
+                    <li><a href="#">Release Calendar</a></li>
+                    <li><a href="#">Stories</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="cart-toggle-btn" class="icon-btn" aria-label="View Cart">
+                    Cart (<span id="cart-count">0</span>)
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="badge">New Drop</span>
+                    <h1>AERO MAX 2026</h1>
+                    <p>Engineered for speed, designed for the street. The next evolution of responsive cushioning is here.</p>
+                    <a href="#products" class="btn btn-primary">Shop The Collection</a>
+                </div>
+                <div class="hero-image">
+                    <!-- Placeholder using a styled div to simulate image layout -->
+                    <div class="image-skeleton"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Grid Section -->
+        <section id="products" class="products-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Trending Now</h2>
+                    <div class="filters">
+                        <button class="filter-btn active">All</button>
+                        <button class="filter-btn">Running</button>
+                        <button class="filter-btn">Lifestyle</button>
+                    </div>
+                </div>
+
+                <div class="product-grid" id="product-grid-container">
+                    <!-- Dynamic rendering via JS, but hardcoded template for structural reference -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Slide-out Cart Panel -->
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-sidebar-header">
+            <h3>Your Cart</h3>
+            <button id="cart-close-btn" class="close-btn">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items-container">
+            <!-- Items injected by JS -->
+            <p class="empty-message">Your cart is empty.</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total-amount">$0.00</span>
+            </div>
+            <button class="btn btn-primary btn-block">Proceed to Checkout</button>
+        </div>
+    </div>
+    <div id="cart-overlay" class="cart-overlay"></div>
+
+    <footer>
+        <div class="container footer-container">
+            <p>&copy; 2026 KICKS Inc. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
